@@ -52,4 +52,14 @@ header {
 .introduction {
   background-color: $mainBackgroundColor;
   height: 100vh;
+
+  h1 {
+    font-size: 52px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
 }
