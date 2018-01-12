@@ -1,13 +1,10 @@
-# gatsby-starter-default
-The default Gatsby starter
+# pastanaga.io
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+Source code for pastanaga.io.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+Pastanaga is a new UX framework for editing the web by Albert Casado.
 
-## Deploy
+## Deployment / Hosting
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Hosting and initial development by kitconcept
+[![kitconcept](https://kitconcept.com/logo.svg)](https://kitconcept.com)
