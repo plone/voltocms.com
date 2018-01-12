@@ -69,18 +69,18 @@ pipeline {
           checkHealthScaleFactor: 0.2
         ])*/
         // lighthouse
-        sh 'npm run lighthouse:ci'
+        // sh 'npm run lighthouse:ci'
       }
       post {
         always {
-          publishHTML (target: [
+          /*publishHTML (target: [
             allowMissing: false,
             alwaysLinkToLastBuild: false,
             keepAll: true,
             reportDir: '.',
             reportFiles: 'lighthouse-report.html',
             reportName: "Lighthouse"
-          ])
+          ])*/
           script {
             currentBuild.getPreviousBuild().getResult().toString()
             currentBuild.result = 'SUCCESS'
