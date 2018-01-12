@@ -1,11 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const IndexPage = () => (
   <div>
-    <div>
-      <h1>The new UX framework</h1>
-      <h2>for editing the web</h2>
+    <div className="introduction">
+      <div className="container">
+        <h1>The new UX framework</h1>
+        <h2>for editing the web</h2>
+      </div>
     </div>
     <div>
       <h2>Curated icons: Enjoy</h2>
@@ -30,7 +32,10 @@ const IndexPage = () => (
     <div>
       <h2>Nutrition schedule</h2>
       <h3>Carrots love mild weather but they adapt to cold as well</h3>
-      <h3>It is one of the most nutricious vegetables. It has vitamines B, C, E, potasium, iron, Angular, React and Vue.js</h3>
+      <h3>
+        It is one of the most nutricious vegetables. It has vitamines B, C, E,
+        potasium, iron, Angular, React and Vue.js
+      </h3>
       <h3>This is the planned season calendar:</h3>
       <dl>
         <dt>October 2017</dt>
@@ -39,7 +44,9 @@ const IndexPage = () => (
     </div>
     <div>
       <h2>Get involved</h2>
-      <h3>We need your help to bring Pastanaga to life. Here is what you can do:</h3>
+      <h3>
+        We need your help to bring Pastanaga to life. Here is what you can do:
+      </h3>
       <p>JavaScript, Python &amp; Plone developers: Help implement Pastanaga</p>
       <p>Companies: Help sponsor people or donate time</p>
       <p>Visit us on github or email humans@pastanaga.io</p>
@@ -54,11 +61,15 @@ const IndexPage = () => (
       <p>We appreciate any kind of support</p>
     </div>
     <footer>
-      <p>The <a href="https://plone.org">Plone</a> community</p>
+      <p>
+        The <a href="https://plone.org">Plone</a> community
+      </p>
       <p>The Guillotina community</p>
-      <p>Hosted by <a href="https://kitconcept.com">kitconcept</a></p>
+      <p>
+        Hosted by <a href="https://kitconcept.com">kitconcept</a>
+      </p>
     </footer>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

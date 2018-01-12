@@ -25,6 +25,9 @@ const Header = () => (
         <li>
           <Link to="">Roadmap</Link>
         </li>
+        <li className="call-to-action">
+          <Link to="">Get Involved</Link>
+        </li>
       </ul>
     </nav>
   </header>
@@ -43,7 +46,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div className="main container">{children()}</div>
+    <div className="main">{children()}</div>
   </div>
 );
 

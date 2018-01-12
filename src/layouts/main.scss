@@ -1,3 +1,8 @@
+@import './variables';
+
+body {
+  background-color: $mainBackgroundColor;
+}
 
 header {
   display: flex;
@@ -12,20 +17,39 @@ header {
   nav ul {
     display: flex;
     margin: 0;
+    align-items: center;
+
+    :last-child {
+      padding-right: 0;
+    }
+
+    li.call-to-action {
+      padding: 10px 15px;
+      border: 1px solid $headerInk;
+      border-radius: 20px;
+    }
   }
 
   nav ul li {
     display: inline-flex;
-    padding-right: 10px;
+    padding-right: 40px;
     margin-bottom: 0;
 
     a {
+      color: $headerInk;
       text-decoration: none;
+      text-transform: uppercase;
     }
+
   }
 }
 
 .container {
   margin: 0 auto;
   max-width: 960px;
+}
+
+.introduction {
+  background-color: $mainBackgroundColor;
+  height: 100vh;
 }
