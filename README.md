@@ -20,7 +20,7 @@ Start development server:
 gatsby develop
 ```
 
-Build static HTML outpus:
+Build static HTML output:
 
 ```bash
 gatsby build
