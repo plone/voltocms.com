@@ -2,7 +2,7 @@
 
 Source code for pastanaga.io.
 
-Pastanaga is a new UX framework for editing the web by Albert Casado.
+[![pastanaga.io](http://www.plone.de/nachrichten/pastanaga-sprint/@@images/0196ab3d-4ff2-4727-b8a4-99952b722292.jpeg =250x)](https://pastanaga.io)Pastanaga is a new UX framework for editing the web by Albert Casado.
 
 ## Deployment / Hosting
 
