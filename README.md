@@ -7,4 +7,4 @@ Source code for pastanaga.io.
 ## Deployment / Hosting
 
 Hosting and initial development by kitconcept
-[![kitconcept](https://kitconcept.com/logo.svg | width=250)](https://kitconcept.com)
+<a href="https://kitconcept.com"><img src="https://kitconcept.com/logo.svg" width="250px" /></a>
