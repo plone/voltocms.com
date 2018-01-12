@@ -1,13 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import editorPreviewImg from '../static/editor-preview.png';
 
 const IndexPage = () => (
   <div>
     <div className="introduction">
-      <div className="container">
+      <div>
         <h1>The new UX framework</h1>
         <h2>for editing the web</h2>
       </div>
+      <img src={editorPreviewImg} alt="pastanaga-editor-preview" />
     </div>
     <div>
       <h2>Curated icons: Enjoy</h2>
