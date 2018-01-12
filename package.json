@@ -21,7 +21,12 @@
     "clean": "rm -rf public",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint --ext .js,.jsx --ignore-pattern public,static ."
+    "lint:js": "eslint --ext .js,.jsx --ignore-pattern public,static .",
+    "psi": "psi pastanaga.io --threshold 99; true",
+    "webpagetest": "webpagetest test https://pastanaga.io -k $WEBPAGETEST_TOKEN --poll --specs testspecs.json --reporter spec; true",
+    "webpagetest:ci": "webpagetest test https://pastanaga.io -k $WEBPAGETEST_TOKEN --poll --specs testspecs.json --reporter xunit > performance.xml || true",
+    "lighthouse": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://pastanaga.io --view",
+    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://pastanaga.io"
   },
   "devDependencies": {
     "eslint": "^4.12.1",
