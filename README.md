@@ -10,4 +10,4 @@ Pastanaga is a new UX framework for editing the web by Albert Casado.
 
 <a href="https://kitconcept.com"><img src="https://kitconcept.com/logo.svg" width="250px" /></a>
 
-Hosting and initial development by kitconcept
+Hosting and initial development by [kitconcept GmbH](https://kitconcept.com).
