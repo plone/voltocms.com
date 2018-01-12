@@ -6,6 +6,26 @@ Source code for pastanaga.io.
 
 Pastanaga is a new UX framework for editing the web by Albert Casado.
 
+## Development
+
+Installation:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+gatsby develop
+```
+
+Build static HTML outpus:
+
+```bash
+gatsby build
+```
+
 ## Deployment / Hosting
 
 <a href="https://kitconcept.com"><img src="https://kitconcept.com/logo.svg" width="250px" /></a>
