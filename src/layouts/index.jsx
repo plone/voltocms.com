@@ -2,18 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import Flexbox from 'flexbox-react';
 import logo from './Logo.svg';
 
-// import './index.css';
 import './main.scss';
 
 const Header = () => (
-  <Flexbox flexDirection="row" element="header" height="80px">
-    <Flexbox className="logo">
+  <header className="container">
+    <div className="logo">
       <img src={logo} alt="logo" />
-    </Flexbox>
-    <Flexbox element="nav">
+    </div>
+    <nav>
       <ul>
         <li>
           <Link to="">Features</Link>
@@ -28,30 +26,24 @@ const Header = () => (
           <Link to="">Roadmap</Link>
         </li>
       </ul>
-    </Flexbox>
-  </Flexbox>
+    </nav>
+  </header>
 );
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Welcome to Pastanaga UI"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Pastanaga UI project home page' },
+        {
+          name: 'keywords',
+          content: 'Pastanaga UI, Pastanaga, Plone, Guillotina, UI, Theme, CSS',
+        },
       ]}
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    <div className="main container">{children()}</div>
   </div>
 );
 

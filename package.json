@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "flexbox-react": "^4.4.0",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8",
