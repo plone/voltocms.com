@@ -36,7 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1",
     "gatsby-plugin-typography": "^1.7.10",
-    "lighthouse-cli": "0.1.2",
+    "lighthouse": "2.7.0",
     "prettier": "^1.10.2",
     "psi": "3.0.0",
     "stylelint": "^8.3.1",
