@@ -1,18 +1,28 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { Header } from '../layouts';
 import editorPreviewImg from '../static/editor-preview.png';
+import iconsPreviewImg from '../static/icons-preview.png';
 
 const IndexPage = () => (
   <div>
-    <div className="introduction">
-      <div>
-        <h1>The new UX framework</h1>
-        <h2>for editing the web</h2>
+    <div className="atf">
+      <Header />
+      <div className="introduction">
+        <div>
+          <h1>The new UX framework</h1>
+          <h2>for editing the web</h2>
+        </div>
+        <img
+          className="pastanaga-editor-preview"
+          src={editorPreviewImg}
+          alt="pastanaga-editor-preview"
+        />
       </div>
-      <img src={editorPreviewImg} alt="pastanaga-editor-preview" />
     </div>
-    <div>
+    {/*}    <div className="icons-page">
       <h2>Curated icons: Enjoy</h2>
+      <img src={iconsPreviewImg} alt="icons-preview" />
       <p>Get a full family of icons to build unforgettable products</p>
     </div>
     <div>
@@ -70,7 +80,7 @@ const IndexPage = () => (
       <p>
         Hosted by <a href="https://kitconcept.com">kitconcept</a>
       </p>
-    </footer>
+</footer> */}
   </div>
 );
 

@@ -1,0 +1,15 @@
+// Responsive breakpoints
+$layout-breakpoint-xs:     600px !default;
+$layout-breakpoint-sm:     768px !default;
+$layout-breakpoint-md:     1280px !default;
+$layout-breakpoint-lg:     1920px !default;
+
+// Then you can do something like:
+// @media #{$md-and-up} {}
+$xs-and-down: 'only screen and (max-width : #{$layout-breakpoint-xs - 1})' !default;  // only xs screens (phone)
+$sm-and-down: 'only screen and (max-width : #{$layout-breakpoint-sm - 1})' !default;  // sm and xs screens (phone and tablet)
+$sm-and-up: 'only screen and (min-width : #{$layout-breakpoint-xs})' !default;  // sm, md and lg (tablet and desktop)
+$sm-only: 'only screen and (min-width : #{$layout-breakpoint-xs}) and (max-width : #{$layout-breakpoint-sm - 1})' !default;  // only sm screens (tablet)
+$md-only: 'only screen and (min-width : #{$layout-breakpoint-sm}) and (max-width : #{$layout-breakpoint-md - 1})' !default;  // only md screens (tablet-adapted)
+$md-and-up: 'only screen and (min-width : #{$layout-breakpoint-sm})' !default;  // md and lg screens (desktop)
+$md-and-down: 'only screen and (max-width : #{$layout-breakpoint-md - 1})' !default;  // xs, sm and md screens

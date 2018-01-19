@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+// import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import logo from './Logo.svg';
-
+import favicon from '../static/favicon.ico';
 import './main.scss';
 
-const Header = () => (
+export const Header = () => (
   <header className="container">
     <div className="logo">
       <img src={logo} alt="logo" />
     </div>
-    <nav>
+    {/*}    <nav>
       <ul>
         <li>
           <Link to="">Features</Link>
@@ -26,10 +26,10 @@ const Header = () => (
           <Link to="">Roadmap</Link>
         </li>
         <li className="call-to-action">
-          <Link to="">Get Involved</Link>
+          <Link to="/">Get Involved</Link>
         </li>
       </ul>
-    </nav>
+</nav> */}
   </header>
 );
 
@@ -44,8 +44,10 @@ const TemplateWrapper = ({ children }) => (
           content: 'Pastanaga UI, Pastanaga, Plone, Guillotina, UI, Theme, CSS',
         },
       ]}
-    />
-    <Header />
+    >
+      <html lang="en" />
+      <link rel="shortcut icon" href={favicon} />
+    </Helmet>
     <div className="main">{children()}</div>
   </div>
 );

@@ -1,7 +1,14 @@
 @import './variables';
+@import './mixins';
 
 body {
   background-color: $mainBackgroundColor;
+}
+
+.atf {
+  height: 100vh;
+  flex-flow: column;
+  display: flex;
 }
 
 header {
@@ -45,30 +52,65 @@ header {
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  width: 960px;
+
+  @media #{$sm-and-down} {
+    width: auto;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  // margin-top: 72px;
 }
 
 .introduction {
   background-color: $mainBackgroundColor;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  height: 100%;
 
   h1 {
     font-size: 52px;
     text-align: center;
     margin-top: 13vh;
+
+    @media #{$sm-and-down} {
+      font-size: 10vw;
+      margin-top: 0;
+    }
   }
 
   h2 {
     font-size: 36px;
     text-align: center;
+    margin-top: 0;
+
+    @media #{$sm-and-down} {
+      font-size: 6vw;
+    }
   }
 
-  img {
+  .pastanaga-editor-preview {
     width: 600px;
+    margin: 0;
+
+    @media #{$sm-and-down} {
+      width: 360px;
+    }
   }
+}
+
+.icons-page {
+  background-color: $iconsPageBackgroundColor;
+
+  img {
+    margin-top: 150px;
+  }
+
+
 }
