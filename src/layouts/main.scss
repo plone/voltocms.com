@@ -6,9 +6,9 @@ body {
 }
 
 .atf {
-    height: 100vh;
     flex-flow: column;
     display: flex;
+    border-bottom: 1px solid grey;
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    padding: 10px;
 
     .logo img {
         margin: 0;
@@ -52,7 +53,7 @@ header {
 
 .container {
     margin: 0 auto;
-    width: 960px;
+    width: 1200px;
 
     @media #{$sm-and-down} {
         width: auto;
@@ -113,4 +114,37 @@ h2 {
     }
 
 
+}
+
+.get-started {
+    h1 {
+        font-size: 52px;
+        text-align: center;
+        margin-top: 13vh;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    p {
+        margin: 0 auto;
+        color: $headerInk;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 }

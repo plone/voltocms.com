@@ -9,27 +9,30 @@ import './main.scss';
 export const Header = () => (
   <header className="container">
     <div className="logo">
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" height="80px" />
     </div>
-    {/*}    <nav>
+      <nav>
       <ul>
         <li>
-          <Link to="">Features</Link>
+          <a href="">Features</a>
         </li>
         <li>
-          <Link to="">Healthy</Link>
+          <a href="">Get Started</a>
         </li>
         <li>
-          <Link to="">Experts</Link>
+          <a href="">Open Source</a>
         </li>
         <li>
-          <Link to="">Roadmap</Link>
+          <a href="">Demo</a>
+        </li>
+        <li>
+          <a href="">Roadmap</a>
         </li>
         <li className="call-to-action">
-          <Link to="/">Get Involved</Link>
+          <a href="/">Get Involved</a>
         </li>
       </ul>
-</nav> */}
+    </nav>
   </header>
 );
 
