@@ -116,7 +116,13 @@ h2 {
 
 }
 
-.get-started {
+.get-started,
+.open-source,
+.demo,
+.roadmap {
+    border-bottom: 1px solid grey;
+    padding-bottom: 13vh;
+
     h1 {
         font-size: 52px;
         text-align: center;
@@ -126,6 +132,15 @@ h2 {
     h2 {
         text-align: center;
         font-size: 36px;
+        width: 900px;
+        margin: 0 auto;
+        font-weight: 400;
+
+        a {
+            font-weight: 700;
+            color: black;
+            text-decoration: none;
+        }
     }
 
     p {
@@ -138,8 +153,7 @@ footer {
     flex-direction: row;
     margin-top: 50px;
     width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 20px auto;
 
     p {
         margin: 0 auto;
