@@ -7,7 +7,7 @@ import iconsPreviewImg from '../static/icons-preview.png';
 const IndexPage = () => (
   <div>
     <div className="atf">
-      <Header />
+      {/* <Header /> */}
       <div className="introduction">
         <div>
           <h1>The new UX framework</h1>

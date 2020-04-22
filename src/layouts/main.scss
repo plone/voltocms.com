@@ -2,115 +2,115 @@
 @import './mixins';
 
 body {
-  background-color: $mainBackgroundColor;
+    background-color: $mainBackgroundColor;
 }
 
 .atf {
-  height: 100vh;
-  flex-flow: column;
-  display: flex;
+    height: 100vh;
+    flex-flow: column;
+    display: flex;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-
-  .logo img {
-    margin: 0;
-  }
-
-  nav ul {
     display: flex;
-    margin: 0;
+    justify-content: space-between;
     align-items: center;
+    height: 100px;
 
-    :last-child {
-      padding-right: 0;
+    .logo img {
+        margin: 0;
     }
 
-    li.call-to-action {
-      padding: 10px 15px;
-      border: 1px solid $headerInk;
-      border-radius: 20px;
-    }
-  }
+    nav ul {
+        display: flex;
+        margin: 0;
+        align-items: center;
 
-  nav ul li {
-    display: inline-flex;
-    padding-right: 40px;
-    margin-bottom: 0;
+        :last-child {
+            padding-right: 0;
+        }
 
-    a {
-      color: $headerInk;
-      text-decoration: none;
-      text-transform: uppercase;
+        li.call-to-action {
+            padding: 10px 15px;
+            border: 1px solid $headerInk;
+            border-radius: 20px;
+        }
     }
-  }
+
+    nav ul li {
+        display: inline-flex;
+        padding-right: 40px;
+        margin-bottom: 0;
+
+        a {
+            color: $headerInk;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .container {
-  margin: 0 auto;
-  width: 960px;
+    margin: 0 auto;
+    width: 960px;
 
-  @media #{$sm-and-down} {
-    width: auto;
-  }
+    @media #{$sm-and-down} {
+        width: auto;
+    }
 }
 
 h2 {
-  font-size: 36px;
-  text-align: center;
-  // margin-top: 72px;
+    font-size: 36px;
+    text-align: center;
+    // margin-top: 72px;
 }
 
 .introduction {
-  background-color: $mainBackgroundColor;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  height: 100%;
+    background-color: $mainBackgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
 
-  h1 {
-    font-size: 52px;
-    text-align: center;
-    margin-top: 13vh;
+    h1 {
+        font-size: 52px;
+        text-align: center;
+        margin-top: 13vh;
 
-    @media #{$sm-and-down} {
-      font-size: 10vw;
-      margin-top: 0;
+        @media #{$sm-and-down} {
+            font-size: 10vw;
+            margin-top: 0;
+        }
     }
-  }
 
-  h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-top: 0;
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 0;
 
-    @media #{$sm-and-down} {
-      font-size: 6vw;
+        @media #{$sm-and-down} {
+            font-size: 6vw;
+        }
     }
-  }
 
-  .pastanaga-editor-preview {
-    width: 600px;
-    margin: 0;
+    .pastanaga-editor-preview {
+        width: 600px;
+        margin: 0;
 
-    @media #{$sm-and-down} {
-      width: 360px;
+        @media #{$sm-and-down} {
+            width: 360px;
+        }
     }
-  }
 }
 
 .icons-page {
-  background-color: $iconsPageBackgroundColor;
+    background-color: $iconsPageBackgroundColor;
 
-  img {
-    margin-top: 150px;
-  }
+    img {
+        margin-top: 150px;
+    }
 
 
 }
