@@ -10,7 +10,7 @@ const IndexPage = () => (
       <Header />
       <div className="introduction">
         <div>
-          <h1>VOLTO</h1>
+          <h1>Volto</h1>
           <h2>The ulimate CMS for editing the web</h2>
         </div>
         <div className="image-wrapper">
