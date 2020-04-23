@@ -146,22 +146,25 @@ h2 {
     padding-bottom: 13vh;
 
     h1 {
-        font-size: 52px;
+        font-size: 36px;
         text-align: center;
         margin-top: 0;
         padding-top: 13vh;
         font-weight: 300;
+        line-height: 42px;
+        color: rgb(74, 74, 74);
     }
 
     h2 {
         text-align: center;
-        font-size: 36px;
+        font-size: 28px;
         width: 900px;
         margin: 0 auto;
         font-weight: 300;
+        color: rgb(74, 74, 74);
 
         a {
-            font-weight: 700;
+            font-weight: 400;
             color: black;
             text-decoration: none;
         }
