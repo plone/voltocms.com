@@ -76,7 +76,8 @@ h2 {
         line-height: 64pt;
         text-align: center;
         margin: 13vh 0 1vh 0;
-        font-weight: 400;
+        font-weight: 300;
+        color: rgb(74, 74, 74);
 
         @media #{$sm-and-down} {
             font-size: 10vw;
@@ -90,6 +91,7 @@ h2 {
         margin-top: 0;
         line-height: 64pt;
         font-weight: 300;
+        color: rgb(74, 74, 74);
 
         @media #{$sm-and-down} {
             font-size: 6vw;
