@@ -4,11 +4,11 @@ const CodeBlock = props => {
   return (
     <div
       className="commands"
-      style={{ width: "900px", margin: "60px auto 5px auto" }}
+      style={{ width: "900pt", margin: "60pt auto 5pt auto" }}
     >
       <div
         className="header-codeblock"
-        style={{ textAlign: "start", marginBottom: "5px", maxWidth: "500px" }}
+        style={{ textAlign: "start", marginBottom: "5pt", maxWidth: "500pt" }}
       >
         <h3 style={{ marginBottom: "0" }}>{props.title}</h3>
       </div>
@@ -16,21 +16,21 @@ const CodeBlock = props => {
         className="codeblock"
         style={{
           backgroundColor: "#eef2ed",
-          border: "1px solid grey",
-          width: "900px",
+          border: "1pt solid grey",
+          width: "900pt",
           margin: "0 auto",
-          borderRadius: "5px",
-          paddingTop: "5px",
+          borderRadius: "5pt",
+          paddingTop: "5pt",
         }}
       >
-        <div className="shell" style={{ width: "100px", marginLeft: "50px" }}>
+        <div className="shell" style={{ width: "100pt", marginLeft: "50pt" }}>
           <span
             style={{
-              border: "1px solid inherit",
+              border: "1pt solid inherit",
               backgroundColor: "rgb(209,221,204)",
-              padding: "6px",
+              padding: "6pt",
               textTransform: "uppercase",
-              borderRadius: "5px",
+              borderRadius: "5pt",
             }}
           >
             Shell
@@ -39,9 +39,9 @@ const CodeBlock = props => {
         <p
           style={{
             textAlign: "start",
-            marginLeft: "45px",
-            marginTop: "10px",
-            marginBottom: "10px",
+            marginLeft: "45pt",
+            marginTop: "10pt",
+            marginBottom: "10pt",
           }}
         >
           {props.code}
@@ -49,7 +49,7 @@ const CodeBlock = props => {
       </div>
       <div
         className="description"
-        style={{ maxWidth: "500px", textAlign: "start", marginTop: "10px" }}
+        style={{ maxWidth: "500pt", textAlign: "start", marginTop: "10pt" }}
       >
         <p style={{ textAlign: "start" }}>{props.description}</p>
       </div>

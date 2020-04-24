@@ -65,15 +65,15 @@ const IndexPage = () => (
       <div
         className="image-wrapper"
         style={{
-          width: "1280px",
-          margin: "30px auto 0 auto",
+          width: "900pt",
+          margin: "30pt auto 0 auto",
         }}
       >
         <img
           className="volto-demo-image"
           src={voltoDemoImg}
           alt="Image showing the Volto Demo"
-          style={{ borderRadius: "20px" }}
+          style={{ borderRadius: "20pt" }}
         />
       </div>
     </div>
@@ -84,7 +84,7 @@ const IndexPage = () => (
           src={peopleSVG}
           alt="people icon"
           className="people-icon"
-          height="105px"
+          height="105pt"
         ></img>
       </div>
       <p>
@@ -118,7 +118,7 @@ const IndexPage = () => (
           src={heartSVG}
           alt="heart-svg"
           className="heart-icon"
-          height="106px"
+          height="106pt"
         />
       </div>
       <p>React, Python & Plone Developers: Help us to further develop Volto</p>
@@ -132,7 +132,7 @@ const IndexPage = () => (
         <div
           className="footer"
           style={{
-            width: "1120px",
+            width: "1120pt",
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
@@ -151,8 +151,8 @@ const IndexPage = () => (
               src={voltoLogo}
               alt="volto-logo"
               className="volto-logo"
-              height="20px"
-              style={{ marginRight: "5px" }}
+              height="20pt"
+              style={{ marginRight: "5pt" }}
             />
             <p>The Volto community</p>
           </div>
@@ -166,8 +166,8 @@ const IndexPage = () => (
                 src={kitconceptLogo}
                 alt="kitconcept-logo"
                 className="kitconcept-logo"
-                height="30px"
-                style={{ margin: "0px 5px" }}
+                height="30pt"
+                style={{ margin: "0pt 5pt" }}
               />
               kitconcept
             </p>

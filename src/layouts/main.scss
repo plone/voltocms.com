@@ -7,8 +7,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 10px;
+    height: 100pt;
+    padding: 10pt;
 
     .logo img {
         margin: 0;
@@ -24,24 +24,24 @@ header {
         }
 
         li.call-to-action {
-            padding: 10px 15px;
-            border: 1px solid rgb(74, 74, 74);
-            border-radius: 20px;
+            padding: 10pt 15pt;
+            border: 1pt solid rgb(74, 74, 74);
+            border-radius: 20pt;
         }
     }
 
     nav ul li {
         display: inline-flex;
-        padding-right: 40px;
+        padding-right: 40pt;
         margin-bottom: 0;
 
         a {
             color: rgb(74, 74, 74);
             text-decoration: none;
             text-transform: uppercase;
-            line-height: 24px;
+            line-height: 24pt;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 14pt;
             // font-family: ;
         }
     }
@@ -49,7 +49,7 @@ header {
 
 .container {
     margin: 0 auto;
-    width: 1280px;
+    width: 1280pt;
 
     @media #{$sm-and-down} {
         width: auto;
@@ -57,9 +57,9 @@ header {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 36pt;
     text-align: center;
-    // margin-top: 72px;
+    // margin-top: 72pt;
 }
 
 .introduction {
@@ -72,8 +72,8 @@ h2 {
     height: 100%;
 
     h1 {
-        font-size: 52px;
-        line-height: 64px;
+        font-size: 52pt;
+        line-height: 64pt;
         text-align: center;
         margin: 13vh 0 1vh 0;
         font-weight: 400;
@@ -85,10 +85,10 @@ h2 {
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 36pt;
         text-align: center;
         margin-top: 0;
-        line-height: 64px;
+        line-height: 64pt;
         font-weight: 300;
 
         @media #{$sm-and-down} {
@@ -97,11 +97,11 @@ h2 {
     }
 
     .pastanaga-editor-preview {
-        width: 600px;
+        width: 600pt;
         margin: 0;
 
         @media #{$sm-and-down} {
-            width: 360px;
+            width: 360pt;
         }
     }
 }
@@ -110,7 +110,7 @@ h2 {
     // background-color: $iconsPageBackgroundColor;
 
     img {
-        margin-top: 150px;
+        margin-top: 150pt;
     }
 }
 
@@ -137,11 +137,11 @@ h2 {
 
     .image-wrapper {
         text-align: center;
-        margin-top: 85px;
+        margin-top: 85pt;
     }
 
     p {
-        font-size: 18px;
+        font-size: 18pt;
         font-weight: 300;
         color: rgb(74, 74, 74);
     }
@@ -152,17 +152,17 @@ h2 {
 
     .image-wrapper {
         text-align: center;
-        margin-top: 85px;
+        margin-top: 85pt;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 18pt;
         font-weight: 300;
         color: rgb(74, 74, 74);
     }
 
     p {
-        font-size: 18px;
+        font-size: 18pt;
         font-weight: 300;
         color: rgb(74, 74, 74);
 
@@ -178,22 +178,22 @@ h2 {
 .demo,
 .roadmap {
     padding-bottom: 13vh;
-    min-height: 686px;
+    min-height: 686pt;
 
     h1 {
-        font-size: 36px;
+        font-size: 36pt;
         text-align: center;
         margin-top: 0;
         padding-top: 13vh;
         font-weight: 300;
-        line-height: 42px;
+        line-height: 42pt;
         color: rgb(74, 74, 74);
     }
 
     h2 {
         text-align: center;
-        font-size: 18px;
-        width: 900px;
+        font-size: 18pt;
+        width: 900pt;
         margin: 0 auto;
         font-weight: 300;
         color: rgb(74, 74, 74);
@@ -214,14 +214,14 @@ h2 {
 
 .footer-wrapper {
     background-color: rgb(126, 115, 105);
-    padding: 50px 0;
+    padding: 50pt 0;
 
     footer {
         display: flex;
         flex-direction: row;
-        margin-top: 50px;
-        width: 1280px;
-        margin: 20px auto;
+        margin-top: 50pt;
+        width: 1280pt;
+        margin: 20pt auto;
 
 
         p {
@@ -229,7 +229,7 @@ h2 {
             color: rgb(255, 255, 255);
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 18pt;
             font-weight: 300;
 
             a {
@@ -246,30 +246,30 @@ h2 {
 //Timeline Component
 
 .timeline {
-    width: 800px;
+    width: 800pt;
     display: flex;
     flex-direction: row;
-    margin: 50px auto 0 auto;
+    margin: 50pt auto 0 auto;
 
     .event-column,
     .date-column,
     .icon-column {
 
         .row {
-            height: 100px;
+            height: 100pt;
         }
     }
 
     .event-column {
-        width: 575px;
+        width: 575pt;
         display: flex;
         flex-direction: column;
 
         .row {
-            margin-left: 18px;
+            margin-left: 18pt;
 
             span {
-                font-size: 26px;
+                font-size: 26pt;
                 font-weight: 300;
                 color: rgb(36, 36, 36);
             }
@@ -277,16 +277,16 @@ h2 {
     }
 
     .date-column {
-        width: 200px;
+        width: 200pt;
         display: flex;
         flex-direction: column;
-        margin-right: 21px;
+        margin-right: 21pt;
 
         .row {
             text-align: end;
 
             span {
-                font-size: 24px;
+                font-size: 24pt;
                 font-weight: 300;
                 color: rgb(135, 143, 147);
                 text-transform: uppercase;
@@ -295,16 +295,16 @@ h2 {
     }
 
     .icon-column {
-        width: 25px;
+        width: 25pt;
         display: flex;
         flex-direction: column;
 
         .row:first-child {
-            margin-top: 10px;
+            margin-top: 10pt;
         }
 
         .circle {
-            height: 20px;
+            height: 20pt;
             border-radius: 80%;
 
             &.blue {
@@ -321,9 +321,9 @@ h2 {
         }
 
         .line {
-            width: 4px;
-            height: 66px;
-            margin: 8px auto 0 auto;
+            width: 4pt;
+            height: 66pt;
+            margin: 8pt auto 0 auto;
 
             &.blue {
                 background-color: rgb(0, 123, 193)
