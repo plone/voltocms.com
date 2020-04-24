@@ -6,10 +6,11 @@ import TimeLine from "../components/timeLine"
 import editorPreviewImg from "../static/editor-preview.png"
 import iconsPreviewImg from "../static/icons-preview.png"
 import voltoDemoImg from "../static/volto_demo.png"
+import heartSVG from "../static/heart-regular.svg"
 
 const IndexPage = () => (
   <div className="view">
-    <div className="atf">
+    <div className="landing">
       <Header />
       <div className="introduction">
         <div>
@@ -89,17 +90,34 @@ const IndexPage = () => (
       <TimeLine
         date1="Right now"
         event1="Volto Remote Sprint"
-        date2="23.03"
+        date2="April 2020"
         event2="Volto 5.0 released"
-        date3="20.02"
+        date3="February 2020"
         event3="Volto is now the standard frontend for Plone!"
-        date4="01.01"
+        date4="January 2020"
         event4="Happy New Year Volto!"
-        date5="29.11"
+        date5="End of 2019"
         event5="Volto 4.0 released"
-        date6="10.10"
-        event6="We'd like to announce the Listing-Block!"
+        date6="End of 2019"
+        event6="Welcome to the Volto family, Listing-Block!"
       />
+    </div>
+    <div className="get-involved">
+      <h1>Get Involved</h1>
+      <h2>Join our Community and become a part of Volto!</h2>
+      <div className="image-wrapper">
+        <img
+          src={heartSVG}
+          alt="heart-svg"
+          className="heart-icon"
+          height="106px"
+        />
+      </div>
+      <p>React, Python & Plone Developers: Help us to further develop Volto</p>
+      <p>
+        Visit us on <a href="https://github.com/plone/volto">github</a> or join
+        our <a href="">Slack Channel</a>
+      </p>
     </div>
     <div className="footer-wrapper">
       <footer>

@@ -2,19 +2,8 @@ import React from "react"
 
 const TimeLine = props => {
   return (
-    <div
-      className="timeline"
-      style={{
-        width: `800px`,
-        display: "flex",
-        flexDirection: "row",
-        margin: "0 auto",
-      }}
-    >
-      <div
-        className="date-column"
-        style={{ width: "200px", display: "flex", flexDirection: "column" }}
-      >
+    <div className="timeline">
+      <div className="date-column">
         <div className="row">
           <span>{props.date1}</span>
         </div>
@@ -34,49 +23,32 @@ const TimeLine = props => {
           <span>{props.date6}</span>
         </div>
       </div>
-      <div
-        className="icon-column"
-        style={{ width: "25px", display: "flex", flexDirection: "column" }}
-      >
+      <div className="icon-column">
         <div className="row">
-          <div
-            className="blueball"
-            style={{
-              backgroundColor: "blue",
-              height: "20px",
-              borderRadius: "80%",
-            }}
-          ></div>
-          <div
-            className="bluestick"
-            style={{
-              width: "4px",
-              height: "66px",
-              backgroundColor: "blue",
-              margin: "8px auto 0 auto",
-            }}
-          ></div>
+          <div className="circle blue"></div>
+          <div className="line blue"></div>
         </div>
         <div className="row">
-          <div
-            className="blueball"
-            style={{
-              backgroundColor: "blue",
-              height: "20px",
-              borderRadius: "80%",
-            }}
-          ></div>
-          <div className="bluestick"></div>
+          <div className="circle blue"></div>
+          <div className="line orange"></div>
         </div>
-        <div className="row"></div>
-        <div className="row"></div>
-        <div className="row"></div>
-        <div className="row"></div>
+        <div className="row">
+          <div className="circle orange"></div>
+          <div className="line orange"></div>
+        </div>
+        <div className="row">
+          <div className="circle red"></div>
+          <div className="line red"></div>
+        </div>
+        <div className="row">
+          <div className="circle red"></div>
+          <div className="line red"></div>
+        </div>
+        <div className="row">
+          <div className="circle red"></div>
+        </div>
       </div>
-      <div
-        className="event-column"
-        style={{ width: "575px", display: "flex", flexDirection: "column" }}
-      >
+      <div className="event-column">
         <div className="row">
           <span>{props.event1}</span>
         </div>
