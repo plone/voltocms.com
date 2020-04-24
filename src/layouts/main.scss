@@ -1,5 +1,5 @@
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 
 body {}
 
@@ -7,7 +7,6 @@ body {}
     flex-flow: column;
     display: flex;
     background-color: rgb(238, 242, 237);
-    border-bottom: 1px solid grey;
 }
 
 header {
@@ -47,6 +46,7 @@ header {
             text-decoration: none;
             text-transform: uppercase;
             line-height: 24px;
+            font-weight: 400;
             font-size: 14px;
             // font-family: ;
         }
@@ -118,8 +118,6 @@ h2 {
     img {
         margin-top: 150px;
     }
-
-
 }
 
 .get-started {
@@ -131,18 +129,17 @@ h2 {
 }
 
 .roadmap {
-    background-color: rgb(209, 221, 204);
+    background-color: rgb(248, 249, 251);
 }
 
 .open-source {
-    background-color: rgb(248, 249, 251);
+    background-color: rgb(209, 221, 204);
 }
 
 .get-started,
 .open-source,
 .demo,
 .roadmap {
-    border-bottom: 1px solid grey;
     padding-bottom: 13vh;
 
     h1 {
@@ -157,11 +154,11 @@ h2 {
 
     h2 {
         text-align: center;
-        font-size: 28px;
+        font-size: 18px;
         width: 900px;
         margin: 0 auto;
         font-weight: 300;
-        color: rgb(74, 74, 74);
+        color: rgb(127, 127, 127);
 
         a {
             font-weight: 400;
@@ -187,5 +184,45 @@ footer {
         color: $headerInk;
         text-decoration: none;
         text-transform: uppercase;
+    }
+}
+
+.timeline {
+
+    .event-column,
+    .date-column,
+    .icon-column {
+
+        .row {
+            height: 100px;
+        }
+    }
+
+    .event-column {
+        .row {
+            margin-left: 18px;
+
+            span {
+                font-size: 26px;
+            }
+        }
+    }
+
+    .date-column {
+        margin-right: 21px;
+
+        .row {
+            text-align: end;
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .icon-column {
+        .row:first-child {
+            margin-top: 10px;
+        }
     }
 }

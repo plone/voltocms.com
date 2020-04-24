@@ -11,19 +11,16 @@ export const Header = () => (
     <div className="logo">
       <img src={logo} alt="logo" height="80px" />
     </div>
-      <nav>
+    <nav>
       <ul>
-        <li>
-          <a href="">Features</a>
-        </li>
         <li>
           <a href="">Get Started</a>
         </li>
         <li>
-          <a href="">Open Source</a>
+          <a href="">Demo</a>
         </li>
         <li>
-          <a href="">Demo</a>
+          <a href="">Open Source</a>
         </li>
         <li>
           <a href="">Roadmap</a>
