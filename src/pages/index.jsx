@@ -7,6 +7,9 @@ import editorPreviewImg from "../static/editor-preview.png"
 import iconsPreviewImg from "../static/icons-preview.png"
 import voltoDemoImg from "../static/volto_demo.png"
 import heartSVG from "../static/heart-regular.svg"
+import peopleSVG from "../static/users-solid.svg"
+import kitconceptLogo from "../static/kitconcept_logo.png"
+import voltoLogo from "../static/volto_logo.png"
 
 const IndexPage = () => (
   <div className="view">
@@ -76,13 +79,18 @@ const IndexPage = () => (
     </div>
     <div className="open-source">
       <h1>Open Source</h1>
-      <h2>
+      <div className="image-wrapper">
+        <img
+          src={peopleSVG}
+          alt="people icon"
+          className="people-icon"
+          height="105px"
+        ></img>
+      </div>
+      <p>
         Volto is an Open Source project, everybody can participate and use it.
         There are no fees or anything!
-      </h2>
-      <div>
-        <p>Lorem Ipsum</p>
-      </div>
+      </p>
     </div>
     <div className="roadmap">
       <h1>Roadmap</h1>
@@ -121,13 +129,50 @@ const IndexPage = () => (
     </div>
     <div className="footer-wrapper">
       <footer>
-        <p>
-          The <a href="https://plone.org">Plone</a> community
-        </p>
-        <p>The Volto community</p>
-        <p>
-          Hosted by <a href="https://kitconcept.com">kitconcept</a>
-        </p>
+        <div
+          className="footer"
+          style={{
+            width: "1120px",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <div className="plone">
+            <p>
+              The <a href="https://plone.org">Plone</a> community
+            </p>
+          </div>
+          <div
+            className="volto"
+            style={{ display: "flex", flexDirection: "row" }}
+          >
+            <img
+              src={voltoLogo}
+              alt="volto-logo"
+              className="volto-logo"
+              height="20px"
+              style={{ marginRight: "5px" }}
+            />
+            <p>The Volto community</p>
+          </div>
+          <div
+            className="kitconcept"
+            style={{ display: "flex", flexDirection: "row" }}
+          >
+            <p>
+              Hosted by{" "}
+              <img
+                src={kitconceptLogo}
+                alt="kitconcept-logo"
+                className="kitconcept-logo"
+                height="30px"
+                style={{ margin: "0px 5px" }}
+              />
+              kitconcept
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   </div>
