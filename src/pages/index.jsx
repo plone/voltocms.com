@@ -29,7 +29,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="get-started">
+    <div className="get-started" id="get-started">
       <h1>Get Started</h1>
       <h2>Getting started with Volto</h2>
       <CodeBlock
@@ -50,7 +50,7 @@ const IndexPage = () => (
         description=" You can view your application at http://localhost:3000. The page supports hot reload."
       />
     </div>
-    <div className="demo">
+    <div className="demo" id="demo">
       <h1>Volto Demo</h1>
       <h2>
         Jump into Volto and try out our Demo!<br></br>Try it{" "}
@@ -77,7 +77,7 @@ const IndexPage = () => (
         />
       </div>
     </div>
-    <div className="open-source">
+    <div className="open-source" id="open-source">
       <h1>Open Source</h1>
       <div className="image-wrapper">
         <img
@@ -92,7 +92,7 @@ const IndexPage = () => (
         There are no fees or anything!
       </p>
     </div>
-    <div className="roadmap">
+    <div className="roadmap" id="roadmap">
       <h1>Roadmap</h1>
       <h2>Timeline...</h2>
       <TimeLine
@@ -110,7 +110,7 @@ const IndexPage = () => (
         event6="Welcome to the Volto family, Listing-Block!"
       />
     </div>
-    <div className="get-involved">
+    <div className="get-involved" id="get-involved">
       <h1>Get Involved</h1>
       <h2>Join our Community and become a part of Volto!</h2>
       <div className="image-wrapper">

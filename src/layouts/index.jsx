@@ -1,10 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react"
+import PropTypes from "prop-types"
 // import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import logo from './Logo.svg';
-import favicon from '../static/favicon.ico';
-import './main.scss';
+import Helmet from "react-helmet"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import logo from "./Logo.svg"
+import favicon from "../static/favicon.ico"
+import "./main.scss"
 
 export const Header = () => (
   <header className="container">
@@ -14,34 +15,34 @@ export const Header = () => (
     <nav>
       <ul>
         <li>
-          <a href="">Get Started</a>
+          <AnchorLink href="#get-started">Get Started</AnchorLink>
         </li>
         <li>
-          <a href="">Demo</a>
+          <AnchorLink href="#demo">Demo</AnchorLink>
         </li>
         <li>
-          <a href="">Open Source</a>
+          <AnchorLink href="#open-source">Open Source</AnchorLink>
         </li>
         <li>
-          <a href="">Roadmap</a>
+          <AnchorLink href="#roadmap">Roadmap</AnchorLink>
         </li>
         <li className="call-to-action">
-          <a href="/">Get Involved</a>
+          <AnchorLink href="#get-involved">Get Involved</AnchorLink>
         </li>
       </ul>
     </nav>
   </header>
-);
+)
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Welcome to Pastanaga UI"
       meta={[
-        { name: 'description', content: 'Pastanaga UI project home page' },
+        { name: "description", content: "Pastanaga UI project home page" },
         {
-          name: 'keywords',
-          content: 'Pastanaga UI, Pastanaga, Plone, Guillotina, UI, Theme, CSS',
+          name: "keywords",
+          content: "Pastanaga UI, Pastanaga, Plone, Guillotina, UI, Theme, CSS",
         },
       ]}
     >
@@ -50,10 +51,10 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <div className="main">{children()}</div>
   </div>
-);
+)
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-};
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper
