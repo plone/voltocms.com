@@ -119,6 +119,7 @@ const IndexPage = () => (
           alt="heart-svg"
           className="heart-icon"
           height="106pt"
+          width="120pt"
         />
       </div>
       <p>React, Python & Plone Developers: Help us to further develop Volto</p>
@@ -132,10 +133,11 @@ const IndexPage = () => (
         <div
           className="footer"
           style={{
-            width: "1120pt",
+            width: "90%",
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            margin: "0 auto",
           }}
         >
           <div className="plone">
@@ -147,30 +149,34 @@ const IndexPage = () => (
             className="volto"
             style={{ display: "flex", flexDirection: "row" }}
           >
-            <img
-              src={voltoLogo}
-              alt="volto-logo"
-              className="volto-logo"
-              height="20pt"
-              style={{ marginRight: "5pt" }}
-            />
+            <div style={{ marginTop: "6pt" }}>
+              <img
+                src={voltoLogo}
+                alt="volto-logo"
+                className="volto-logo"
+                height="20pt"
+                style={{ marginRight: "5pt" }}
+              />
+            </div>
             <p>The Volto community</p>
           </div>
           <div
             className="kitconcept"
             style={{ display: "flex", flexDirection: "row" }}
           >
-            <p>
-              Hosted by{" "}
-              <img
-                src={kitconceptLogo}
-                alt="kitconcept-logo"
-                className="kitconcept-logo"
-                height="30pt"
-                style={{ margin: "0pt 5pt" }}
-              />
-              kitconcept
-            </p>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <p>Hosted by </p>
+              <div style={{ marginTop: "3pt" }}>
+                <img
+                  src={kitconceptLogo}
+                  alt="kitconcept-logo"
+                  className="kitconcept-logo"
+                  height="30pt"
+                  style={{ margin: "0pt 5pt" }}
+                />
+              </div>
+              <p>kitconcept</p>
+            </div>
           </div>
         </div>
       </footer>
