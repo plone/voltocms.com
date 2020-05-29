@@ -17,8 +17,10 @@ const IndexPage = () => (
       <Header />
       <div className="introduction">
         <div>
-          <h1>Volto</h1>
-          <h2>The ulimate CMS for editing the web</h2>
+          <h1>
+            Volto, a new experience for<br></br> editing the web
+          </h1>
+          <h2>Start editing your content the intuitive way.</h2>
         </div>
         <div className="image-wrapper">
           <img
@@ -30,7 +32,26 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="get-started" id="get-started">
-      <h1>Get Started</h1>
+      <h1>Features</h1>
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h3>Fast</h3>
+        <p>
+          Built on ReactJS, Volto is ready to use and speedy out of the box by
+          design.
+        </p>
+        <h3>Simplicity with batteries included</h3>
+        <p>
+          Assemble your content in an intuitive way. The{" "}
+          <a href="https://www.plone.org">Plone</a> backend provides Volto with
+          a full feature set of an Enterprise Content Management System.
+        </p>
+        <h3>Securely organized content</h3>
+        <p>
+          A granular security system allows you to manage the security of your
+          content.
+        </p>
+      </div>
+      {/* <h1>Get Started</h1>
       <h2>Getting started with Volto</h2>
       <CodeBlock
         title="Clone the   'create-volto-app'   GitHub repository"
@@ -48,10 +69,26 @@ const IndexPage = () => (
         title="Run the project in development mode."
         code="yarn start"
         description=" You can view your application at http://localhost:3000. The page supports hot reload."
-      />
+      /> */}
     </div>
     <div className="demo" id="demo">
-      <h1>Volto Demo</h1>
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Why using Volto</h1>
+        <h3>
+          The world is colorful and <b>multilingual</b>. With Volto it’s
+          convenient to manage translations.
+        </h3>
+        <h3>
+          Your content is <b>searchable</b>. Volto indexes out of the box the
+          complete content including files like PDFs.
+        </h3>
+        <h3>
+          Community driven software is <b>healthy and future-proof</b>. Volto is
+          a child of a strong Open Source Community: 800 contributors are
+          refining Plone and Volto.
+        </h3>
+      </div>
+      {/* <h1>Volto Demo</h1>
       <h2>
         Jump into Volto and try out our Demo!<br></br>Try it{" "}
         <a
@@ -75,10 +112,14 @@ const IndexPage = () => (
           alt="Image showing the Volto Demo"
           style={{ borderRadius: "20pt" }}
         />
-      </div>
+      </div> */}
     </div>
     <div className="open-source" id="open-source">
-      <h1>Open Source</h1>
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Volto in action</h1>
+        <h1>TBD...</h1>
+      </div>
+      {/* <h1>Open Source</h1>
       <div className="image-wrapper">
         <img
           src={peopleSVG}
@@ -90,10 +131,37 @@ const IndexPage = () => (
       <p>
         Volto is an Open Source project, everybody can participate and use it.
         There are no fees or anything!
-      </p>
+      </p> */}
     </div>
     <div className="roadmap" id="roadmap">
-      <h1>Roadmap</h1>
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Volto Demo</h1>
+        <h2>
+          Jump into Volto and try out our Demo!<br></br>Try it{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://volto.kitconcept.com"
+          >
+            here
+          </a>
+        </h2>
+        <div
+          className="image-wrapper"
+          style={{
+            width: "900pt",
+            margin: "30pt auto 0 auto",
+          }}
+        >
+          <img
+            className="volto-demo-image"
+            src={voltoDemoImg}
+            alt="Image showing the Volto Demo"
+            style={{ borderRadius: "20pt" }}
+          />
+        </div>
+      </div>
+      {/* <h1>Roadmap</h1>
       <h2>Timeline...</h2>
       <TimeLine
         date1="Right now"
@@ -126,8 +194,100 @@ const IndexPage = () => (
       <p>
         Visit us on <a href="https://github.com/plone/volto">github</a> or join
         our <a href="">Slack Channel</a>
-      </p>
+      </p> */}
     </div>
+    <div className="starting">
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Get started</h1>
+        <h3>The prerequisites for a local installation are</h3>
+        <h3>
+          Node.js, Python and for a first taste install also Docker.
+          <h3>Get the Plone backend</h3>
+        </h3>
+        <CodeBlock
+          title="Clone the   'create-volto-app'   GitHub repository"
+          code={`docker run -it --rm --name=plone -p 8080:8080 -e SITE=Plone -e ADDONS="kitconcept.volto" -e ZCML="kitconcept.volto.cors" -e PROFILES="kitconcept.volto:default-homepage" plone
+        `}
+        />
+        <CodeBlock
+          title="Get Volto"
+          code="create-volto-app myvoltoapp; cd myvoltoapp; yarn start"
+        />
+        <CodeBlock
+          title="Your Volto is ready under:"
+          code="http://localhost:3000"
+        />
+        <h3>For editing, login with admin:admin</h3>
+        <h3>
+          More options and detailed instructions how to install, <br></br>
+          <a href="https://docs.voltocms.com/getting-started/install/">
+            check out the Volto Docs
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div className="why-volto">
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Why developers love Volto</h1>
+        <h3>Build faster</h3>
+        <p>
+          Volto is designed to start creating content out of the box. You need a
+          different view on your content? We use component shadowing to override
+          an existing view with a custom version, without having to modify
+          Volto’s source. Just copy and modify the markup.
+        </p>
+        <h3>No reinvention of the wheel</h3>
+        <p>
+          Concentrate on features and design. The rich ecosystem of React
+          components is at hand.
+        </p>
+        <h3>Do more with less</h3>
+        <p>
+          Volto supports Semantic UI with declarative APIs providing robust
+          features and prop validation.
+        </p>
+        <CodeBlock
+          title="Clone the   'create-volto-app'   GitHub repository"
+          code="git clone git@github.com:plone/create-volto-app.git"
+        />
+        <CodeBlock
+          title="cd into the create-volto-app folder"
+          code="cd create-volto-app"
+        />
+        <CodeBlock
+          title="Get the boilerplate"
+          code="create-volto-app <app-name>"
+        />
+        <CodeBlock
+          title="Run the project in development mode."
+          code="yarn start"
+          description=" You can view your application at http://localhost:3000. The page supports hot reload."
+        />
+      </div>
+    </div>
+    <div className="learn-more">
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Learn more</h1>
+        <h3>Training:</h3>
+        <p>
+          Volto, Volto-Hands-On and Mastering Plone 6 (Plone backend and Volto
+          frontend)
+        </p>
+        <h3>Documentation</h3>
+        <p>doc.voltocms.com</p>
+      </div>
+    </div>
+    <div className="help">
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Get help</h1>
+        <p>
+          Find the smart Plone people discussing Volto topics on
+          https://community.plone.org/c/volto/ Just a question? We chat on
+          https://gitter.im/plone/volto
+        </p>
+      </div>
+    </div>
+
     <div className="footer-wrapper">
       <footer>
         <div

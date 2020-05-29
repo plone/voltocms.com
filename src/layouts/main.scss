@@ -123,10 +123,43 @@ h2 {
 
 .get-started {
   background-color: rgb(230, 238, 227);
+
+  h1 {
+    margin-bottom: 50pt;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 18pt;
+    width: 900pt;
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+    margin-top: 40pt;
+  }
+
+  p {
+    font-size: 16pt;
+    font-weight: 300;
+
+    a {
+      font-weight: 400;
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 
 .demo {
   background-color: rgb(220, 229, 217);
+
+  h3 {
+    text-align: center;
+    font-size: 18pt;
+    width: 900pt;
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+    margin-top: 40pt;
+  }
 }
 
 .roadmap {
@@ -174,11 +207,31 @@ h2 {
   }
 }
 
+.starting {
+  background-color: rgb(231, 219, 208);
+}
+
+.why-volto {
+  background-color: rgb(208, 198, 189);
+}
+
+.learn-more {
+  background-color: rgb(195, 182, 171)
+}
+
+.help {
+  background-color: rgb(219, 229, 215);
+}
+
 .get-started,
 .get-involved,
 .open-source,
 .demo,
-.roadmap {
+.roadmap,
+.starting,
+.why-volto,
+.learn-more,
+.help {
   padding-bottom: 13vh;
   min-height: 686pt;
 
@@ -207,8 +260,31 @@ h2 {
     }
   }
 
-  p {
+  h3 {
     text-align: center;
+    font-size: 18pt;
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+    margin-top: 40pt;
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+
+  p {
+    font-size: 16pt;
+    font-weight: 300;
+    text-align: center;
+
+    a {
+      font-weight: 400;
+      color: black;
+      text-decoration: none;
+
+      :visited {
+        color: black;
+      }
+    }
   }
 }
 
