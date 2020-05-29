@@ -221,6 +221,12 @@ h2 {
 
 .help {
   background-color: rgb(219, 229, 215);
+
+  .image-wrapper {
+    text-align: center;
+    margin-top: 45pt;
+    margin-bottom: 20pt;
+  }
 }
 
 .get-started,
@@ -233,7 +239,7 @@ h2 {
 .learn-more,
 .help {
   padding-bottom: 13vh;
-  min-height: 686pt;
+  min-height: 486pt;
 
   h1 {
     font-size: 36pt;

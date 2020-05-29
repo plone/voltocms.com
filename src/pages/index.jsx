@@ -116,25 +116,6 @@ const IndexPage = () => (
     </div>
     <div className="open-source" id="open-source">
       <div style={{ width: "936pt", margin: "0 auto" }}>
-        <h1>Volto in action</h1>
-        <h1>TBD...</h1>
-      </div>
-      {/* <h1>Open Source</h1>
-      <div className="image-wrapper">
-        <img
-          src={peopleSVG}
-          alt="people icon"
-          className="people-icon"
-          height="105pt"
-        ></img>
-      </div>
-      <p>
-        Volto is an Open Source project, everybody can participate and use it.
-        There are no fees or anything!
-      </p> */}
-    </div>
-    <div className="roadmap" id="roadmap">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
         <h1>Volto Demo</h1>
         <h2>
           Jump into Volto and try out our Demo!<br></br>Try it{" "}
@@ -160,6 +141,41 @@ const IndexPage = () => (
             style={{ borderRadius: "20pt" }}
           />
         </div>
+        <h1>Volto in action</h1>
+        <h1>TBD...</h1>
+      </div>
+      {/* <h1>Open Source</h1>
+      <div className="image-wrapper">
+        <img
+          src={peopleSVG}
+          alt="people icon"
+          className="people-icon"
+          height="105pt"
+        ></img>
+      </div>
+      <p>
+        Volto is an Open Source project, everybody can participate and use it.
+        There are no fees or anything!
+      </p> */}
+    </div>
+    <div className="roadmap" id="roadmap">
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Roadmap</h1>
+        <h2>Timeline...</h2>
+        <TimeLine
+          date1="Right now"
+          event1="Volto Remote Sprint"
+          date2="April 2020"
+          event2="Volto 5.0 released"
+          date3="February 2020"
+          event3="Volto is now the standard frontend for Plone!"
+          date4="January 2020"
+          event4="Happy New Year Volto!"
+          date5="End of 2019"
+          event5="Volto 4.0 released"
+          date6="End of 2019"
+          event6="Welcome to the Volto family, Listing-Block!"
+        />
       </div>
       {/* <h1>Roadmap</h1>
       <h2>Timeline...</h2>
@@ -275,15 +291,33 @@ const IndexPage = () => (
         </p>
         <h3>Documentation</h3>
         <p>doc.voltocms.com</p>
-      </div>
-    </div>
-    <div className="help">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
         <h1>Get help</h1>
         <p>
           Find the smart Plone people discussing Volto topics on
           https://community.plone.org/c/volto/ Just a question? We chat on
           https://gitter.im/plone/volto
+        </p>
+      </div>
+    </div>
+    <div className="help">
+      <div style={{ width: "936pt", margin: "0 auto" }}>
+        <h1>Get Involved</h1>
+        <h2>Join our Community and become a part of Volto!</h2>
+        <div className="image-wrapper">
+          <img
+            src={heartSVG}
+            alt="heart-svg"
+            className="heart-icon"
+            height="106pt"
+            width="120pt"
+          />
+        </div>
+        <p>
+          React, Python & Plone Developers: Help us to further develop Volto
+        </p>
+        <p>
+          Visit us on <a href="https://github.com/plone/volto">github</a> or
+          join our <a href="">Slack Channel</a>
         </p>
       </div>
     </div>
