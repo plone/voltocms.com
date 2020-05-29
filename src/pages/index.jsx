@@ -138,7 +138,7 @@ const IndexPage = () => (
             className="volto-demo-image"
             src={voltoDemoImg}
             alt="Image showing the Volto Demo"
-            style={{ borderRadius: "20pt" }}
+            style={{ borderRadius: "20pt", maxWidth: "80%" }}
           />
         </div>
         <h1>Volto in action</h1>
