@@ -48,7 +48,15 @@ header {
 
 .container {
   margin: 0 auto;
-  width: 1280pt;
+
+  margin-right: 70pt;
+  margin-left: 70pt;
+
+
+  @media only screen and (max-width: 1400px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media #{$sm-and-down} {
     width: auto;
@@ -98,7 +106,7 @@ h2 {
   }
 
   .pastanaga-editor-preview {
-    width: 600pt;
+
     margin: 0;
 
     @media #{$sm-and-down} {
@@ -131,7 +139,6 @@ h2 {
   h3 {
     text-align: center;
     font-size: 18pt;
-    width: 900pt;
     font-weight: 500;
     color: rgb(74, 74, 74);
     margin-top: 40pt;
@@ -155,7 +162,6 @@ h2 {
   h3 {
     text-align: center;
     font-size: 18pt;
-    width: 900pt;
     font-weight: 500;
     color: rgb(74, 74, 74);
     margin-top: 40pt;
@@ -240,6 +246,12 @@ h2 {
 .help {
   padding-bottom: 13vh;
   min-height: 486pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 100%;
 
   h1 {
     font-size: 36pt;
@@ -249,15 +261,16 @@ h2 {
     font-weight: 300;
     line-height: 42pt;
     color: rgb(74, 74, 74);
+    max-width: 936pt;
   }
 
   h2 {
     text-align: center;
     font-size: 18pt;
-    width: 900pt;
     margin: 0 auto;
     font-weight: 300;
     color: rgb(74, 74, 74);
+    max-width: 936pt;
 
     a {
       font-weight: 400;
@@ -274,6 +287,7 @@ h2 {
     margin-top: 40pt;
     margin-right: 0;
     margin-left: 0;
+    max-width: 936pt;
 
   }
 
@@ -281,6 +295,7 @@ h2 {
     font-size: 16pt;
     font-weight: 300;
     text-align: center;
+    max-width: 936pt;
 
     a {
       font-weight: 400;
@@ -304,8 +319,15 @@ h2 {
     display: flex;
     flex-direction: row;
     margin-top: 50pt;
-    width: 1280pt;
-    margin: 20pt auto;
+    margin: 0 70pt;
+    justify-content: space-between;
+
+
+    .volto,
+    .kitconcept {
+      display: flex;
+      flex-direction: row;
+    }
 
     p {
       margin: 0 auto;
@@ -325,7 +347,6 @@ h2 {
 //Code Block Component
 
 .commands {
-  width: 900pt;
   margin: 60pt auto 5pt auto;
 
 
@@ -344,7 +365,6 @@ h2 {
   .codeblock {
     background-color: #eef2ed;
     border: 1pt solid grey;
-    width: 900pt;
     margin: 0 auto;
     border-radius: 5pt;
     padding-top: 5pt;
@@ -386,7 +406,6 @@ h2 {
 //Timeline Component
 
 .timeline {
-  width: 800pt;
   display: flex;
   flex-direction: row;
   margin: 50pt auto 0 auto;
@@ -400,7 +419,6 @@ h2 {
   }
 
   .event-column {
-    width: 575pt;
     display: flex;
     flex-direction: column;
 
@@ -416,7 +434,6 @@ h2 {
   }
 
   .date-column {
-    width: 200pt;
     display: flex;
     flex-direction: column;
     margin-right: 21pt;
@@ -434,7 +451,7 @@ h2 {
   }
 
   .icon-column {
-    width: 25pt;
+
     display: flex;
     flex-direction: column;
 

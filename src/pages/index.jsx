@@ -32,8 +32,8 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="get-started" id="get-started">
-      <h1>Features</h1>
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
+        <h1>Features</h1>
         <h3>Fast</h3>
         <p>
           Built on ReactJS, Volto is ready to use and speedy out of the box by
@@ -72,7 +72,7 @@ const IndexPage = () => (
       /> */}
     </div>
     <div className="demo" id="demo">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Why using Volto</h1>
         <p>
           The world is colorful and <b>multilingual</b>. With Volto it’s
@@ -115,7 +115,7 @@ const IndexPage = () => (
       </div> */}
     </div>
     <div className="open-source" id="open-source">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Volto Demo</h1>
         <h2>
           Jump into Volto and try out our Demo!<br></br>Try it{" "}
@@ -159,7 +159,7 @@ const IndexPage = () => (
       </p> */}
     </div>
     <div className="roadmap" id="roadmap">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Roadmap</h1>
         <h2>Timeline...</h2>
         <TimeLine
@@ -213,7 +213,7 @@ const IndexPage = () => (
       </p> */}
     </div>
     <div className="starting">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Get started</h1>
         <p>The prerequisites for a local installation are</p>
         <p>
@@ -245,7 +245,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="why-volto">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Why developers love Volto</h1>
         <h3>Build faster</h3>
         <p>
@@ -284,7 +284,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="learn-more">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Learn more</h1>
         <h3>Training:</h3>
         <p>
@@ -302,7 +302,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="help">
-      <div style={{ width: "936pt", margin: "0 auto" }}>
+      <div>
         <h1>Get Involved</h1>
         <h2>Join our Community and become a part of Volto!</h2>
         <div className="image-wrapper">
@@ -326,53 +326,36 @@ const IndexPage = () => (
 
     <div className="footer-wrapper">
       <footer>
-        <div
-          className="footer"
-          style={{
-            width: "90%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            margin: "0 auto",
-          }}
-        >
-          <div className="plone">
-            <p>
-              The <a href="https://plone.org">Plone</a> community
-            </p>
+        <div className="plone">
+          <p>
+            The <a href="https://plone.org">Plone</a> community
+          </p>
+        </div>
+        <div className="volto">
+          <div style={{ marginTop: "6pt" }}>
+            <img
+              src={voltoLogo}
+              alt="volto-logo"
+              className="volto-logo"
+              height="20pt"
+              style={{ marginRight: "5pt" }}
+            />
           </div>
-          <div
-            className="volto"
-            style={{ display: "flex", flexDirection: "row" }}
-          >
-            <div style={{ marginTop: "6pt" }}>
+          <p>The Volto community</p>
+        </div>
+        <div className="kitconcept">
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <p>Hosted by </p>
+            <div style={{ marginTop: "3pt" }}>
               <img
-                src={voltoLogo}
-                alt="volto-logo"
-                className="volto-logo"
-                height="20pt"
-                style={{ marginRight: "5pt" }}
+                src={kitconceptLogo}
+                alt="kitconcept-logo"
+                className="kitconcept-logo"
+                height="30pt"
+                style={{ margin: "0pt 5pt" }}
               />
             </div>
-            <p>The Volto community</p>
-          </div>
-          <div
-            className="kitconcept"
-            style={{ display: "flex", flexDirection: "row" }}
-          >
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              <p>Hosted by </p>
-              <div style={{ marginTop: "3pt" }}>
-                <img
-                  src={kitconceptLogo}
-                  alt="kitconcept-logo"
-                  className="kitconcept-logo"
-                  height="30pt"
-                  style={{ margin: "0pt 5pt" }}
-                />
-              </div>
-              <p>kitconcept</p>
-            </div>
+            <p>kitconcept</p>
           </div>
         </div>
       </footer>
