@@ -1,6 +1,11 @@
 @import "./variables";
 @import "./mixins";
 
+b {
+  font-weight: 400;
+  color: black;
+}
+
 //Header
 
 header {
@@ -178,7 +183,23 @@ h2 {
   .image-wrapper {
     text-align: center;
     margin-top: 85pt;
+    width: 900pt;
+
+    img {
+
+      margin: 0 10pt;
+
+      @media #{$md-and-down} {
+        width: 620pt;
+      }
+
+      @media #{$sm-and-down} {
+        width: 360pt;
+      }
+    }
   }
+
+
 
   p {
     font-size: 18pt;
@@ -253,6 +274,11 @@ h2 {
   align-content: center;
   height: 100%;
 
+  .wrapper {
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
   h1 {
     font-size: 36pt;
     text-align: center;
@@ -319,14 +345,52 @@ h2 {
     display: flex;
     flex-direction: row;
     margin-top: 50pt;
-    margin: 0 70pt;
+    margin: 0 50pt;
     justify-content: space-between;
+
+    @media #{$sm-and-down} {
+      flex-direction: column;
+    }
+
+    @media #{$md-and-down} {
+      margin: 0 20pt;
+    }
 
 
     .volto,
-    .kitconcept {
+    .kitconcept,
+    .plone {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+    }
+
+    .plone {
+      @media #{$sm-and-down} {
+        margin-bottom: 20px;
+      }
+    }
+
+    .kitconcept {
+      img {
+        height: 30pt;
+        margin: 0pt 5pt;
+
+        @media #{$md-and-down} {
+          height: 18pt;
+        }
+      }
+    }
+
+    .volto {
+      img {
+        height: 20pt;
+        margin-right: 5pt;
+
+        @media #{$md-and-down} {
+          height: 14pt;
+        }
+      }
     }
 
     p {
@@ -336,6 +400,16 @@ h2 {
       text-transform: uppercase;
       font-size: 18pt;
       font-weight: 300;
+
+      @media #{$md-and-down} {
+        font-size: 14pt;
+      }
+
+      @media #{$sm-and-down} {
+        margin: 0;
+      }
+
+
 
       a {
         color: rgb(120, 193, 215);
@@ -375,7 +449,7 @@ h2 {
 
       span {
         border: 1pt solid inherit;
-        background-color: rgb(209, 221, 204);
+        background-color: rgb(250, 221, 221);
         padding: 6pt;
         text-transform: uppercase;
         border-radius: 5pt;

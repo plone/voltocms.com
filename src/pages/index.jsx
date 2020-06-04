@@ -16,7 +16,7 @@ const IndexPage = () => (
     <div className="landing">
       <Header />
       <div className="introduction">
-        <div>
+        <div className="wrapper">
           <h1>
             Volto, a new experience for<br></br> editing the web
           </h1>
@@ -32,7 +32,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="get-started" id="get-started">
-      <div>
+      <div className="wrapper">
         <h1>Features</h1>
         <h3>Fast</h3>
         <p>
@@ -47,8 +47,8 @@ const IndexPage = () => (
         </p>
         <h3>Securely organized content</h3>
         <p>
-          A granular security system allows you to manage the security of your
-          content.
+          A granular security system allows you to manage the visibility and
+          access to your content.
         </p>
       </div>
       {/* <h1>Get Started</h1>
@@ -72,7 +72,7 @@ const IndexPage = () => (
       /> */}
     </div>
     <div className="demo" id="demo">
-      <div>
+      <div className="wrapper">
         <h1>Why using Volto</h1>
         <p>
           The world is colorful and <b>multilingual</b>. With Volto it’s
@@ -115,7 +115,7 @@ const IndexPage = () => (
       </div> */}
     </div>
     <div className="open-source" id="open-source">
-      <div>
+      <div className="wrapper">
         <h1>Volto Demo</h1>
         <h2>
           Jump into Volto and try out our Demo!<br></br>Try it{" "}
@@ -127,13 +127,7 @@ const IndexPage = () => (
             here
           </a>
         </h2>
-        <div
-          className="image-wrapper"
-          style={{
-            width: "900pt",
-            margin: "30pt auto 0 auto",
-          }}
-        >
+        <div className="image-wrapper">
           <img
             className="volto-demo-image"
             src={voltoDemoImg}
@@ -159,7 +153,7 @@ const IndexPage = () => (
       </p> */}
     </div>
     <div className="roadmap" id="roadmap">
-      <div>
+      <div className="wrapper">
         <h1>Roadmap</h1>
         <h2>Timeline...</h2>
         <TimeLine
@@ -213,7 +207,7 @@ const IndexPage = () => (
       </p> */}
     </div>
     <div className="starting">
-      <div>
+      <div className="wrapper">
         <h1>Get started</h1>
         <p>The prerequisites for a local installation are</p>
         <p>
@@ -245,7 +239,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="why-volto">
-      <div>
+      <div className="wrapper">
         <h1>Why developers love Volto</h1>
         <h3>Build faster</h3>
         <p>
@@ -279,12 +273,16 @@ const IndexPage = () => (
         <CodeBlock
           title="Run the project in development mode."
           code="yarn start"
-          description=" You can view your application at http://localhost:3000. The page supports hot reload."
         />
+        <p>
+          {" "}
+          You can view your application at <b>http://localhost:3000</b>. The
+          page supports hot reload.
+        </p>
       </div>
     </div>
     <div className="learn-more">
-      <div>
+      <div className="wrapper">
         <h1>Learn more</h1>
         <h3>Training:</h3>
         <p>
@@ -295,14 +293,19 @@ const IndexPage = () => (
         <p>doc.voltocms.com</p>
         <h1>Get help</h1>
         <p>
-          Find the smart Plone people discussing Volto topics on
-          https://community.plone.org/c/volto/ Just a question? We chat on
-          https://gitter.im/plone/volto
+          Find the smart Plone people discussing Volto topics on{" "}
+          <a href="https://community.plone.org/c/volto/">
+            https://community.plone.org/c/volto/
+          </a>{" "}
+          <br></br>Just a question? We chat on{" "}
+          <a href="https://gitter.im/plone/volto">
+            https://gitter.im/plone/volto
+          </a>
         </p>
       </div>
     </div>
     <div className="help">
-      <div>
+      <div className="wrapper">
         <h1>Get Involved</h1>
         <h2>Join our Community and become a part of Volto!</h2>
         <div className="image-wrapper">
@@ -333,13 +336,7 @@ const IndexPage = () => (
         </div>
         <div className="volto">
           <div style={{ marginTop: "6pt" }}>
-            <img
-              src={voltoLogo}
-              alt="volto-logo"
-              className="volto-logo"
-              height="20pt"
-              style={{ marginRight: "5pt" }}
-            />
+            <img src={voltoLogo} alt="volto-logo" className="volto-logo" />
           </div>
           <p>The Volto community</p>
         </div>
@@ -351,8 +348,6 @@ const IndexPage = () => (
                 src={kitconceptLogo}
                 alt="kitconcept-logo"
                 className="kitconcept-logo"
-                height="30pt"
-                style={{ margin: "0pt 5pt" }}
               />
             </div>
             <p>kitconcept</p>
