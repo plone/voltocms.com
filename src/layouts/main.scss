@@ -324,6 +324,63 @@ h2 {
 
 //Code Block Component
 
+.commands {
+  width: 900pt;
+  margin: 60pt auto 5pt auto;
+
+
+  .header-codeblock {
+
+    text-align: start;
+    margin-bottom: 5pt;
+    max-width: 500pt;
+
+    h3 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .codeblock {
+    background-color: #eef2ed;
+    border: 1pt solid grey;
+    width: 900pt;
+    margin: 0 auto;
+    border-radius: 5pt;
+    padding-top: 5pt;
+
+    .shell {
+      width: 100pt;
+      margin-left: 50pt;
+
+      span {
+        border: 1pt solid inherit;
+        background-color: rgb(209, 221, 204);
+        padding: 6pt;
+        text-transform: uppercase;
+        border-radius: 5pt;
+      }
+    }
+
+    p {
+      text-align: start;
+      margin-left: 45pt;
+      margin-top: 10pt;
+      margin-bottom: 10pt;
+    }
+  }
+
+  .description {
+    max-width: 500pt;
+    text-align: start;
+    margin-top: 10pt;
+
+    p {
+      text-align: start;
+    }
+  }
+}
+
 .commands {}
 
 //Timeline Component

@@ -74,19 +74,19 @@ const IndexPage = () => (
     <div className="demo" id="demo">
       <div style={{ width: "936pt", margin: "0 auto" }}>
         <h1>Why using Volto</h1>
-        <h3>
+        <p>
           The world is colorful and <b>multilingual</b>. With Volto it’s
           convenient to manage translations.
-        </h3>
-        <h3>
+        </p>
+        <p>
           Your content is <b>searchable</b>. Volto indexes out of the box the
           complete content including files like PDFs.
-        </h3>
-        <h3>
+        </p>
+        <p>
           Community driven software is <b>healthy and future-proof</b>. Volto is
           a child of a strong Open Source Community: 800 contributors are
           refining Plone and Volto.
-        </h3>
+        </p>
       </div>
       {/* <h1>Volto Demo</h1>
       <h2>
@@ -174,7 +174,7 @@ const IndexPage = () => (
           date5="End of 2019"
           event5="Volto 4.0 released"
           date6="End of 2019"
-          event6="Welcome to the Volto family, Listing-Block!"
+          event6="Introducing the Listing-Block!"
         />
       </div>
       {/* <h1>Roadmap</h1>
@@ -215,11 +215,11 @@ const IndexPage = () => (
     <div className="starting">
       <div style={{ width: "936pt", margin: "0 auto" }}>
         <h1>Get started</h1>
-        <h3>The prerequisites for a local installation are</h3>
-        <h3>
+        <p>The prerequisites for a local installation are</p>
+        <p>
           Node.js, Python and for a first taste install also Docker.
-          <h3>Get the Plone backend</h3>
-        </h3>
+          <p>Get the Plone backend</p>
+        </p>
         <CodeBlock
           title="Clone the   'create-volto-app'   GitHub repository"
           code={`docker run -it --rm --name=plone -p 8080:8080 -e SITE=Plone -e ADDONS="kitconcept.volto" -e ZCML="kitconcept.volto.cors" -e PROFILES="kitconcept.volto:default-homepage" plone
@@ -233,13 +233,15 @@ const IndexPage = () => (
           title="Your Volto is ready under:"
           code="http://localhost:3000"
         />
-        <h3>For editing, login with admin:admin</h3>
-        <h3>
+        <p>
+          For editing, login with <b>admin:admin</b>
+        </p>
+        <p>
           More options and detailed instructions how to install, <br></br>
           <a href="https://docs.voltocms.com/getting-started/install/">
             check out the Volto Docs
           </a>
-        </h3>
+        </p>
       </div>
     </div>
     <div className="why-volto">
