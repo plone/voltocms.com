@@ -55,6 +55,18 @@ header {
     padding-right: 40pt;
     margin-bottom: 0;
 
+    @media #{$md-and-down} {
+      padding-right: 20pt;
+    }
+
+    @media only screen and (max-width: 900px) {
+      padding-right: 10pt;
+
+      &:nth-of-type(4) {
+        display: none;
+      }
+    }
+
     a {
       color: rgb(74, 74, 74);
       text-decoration: none;
@@ -62,6 +74,10 @@ header {
       line-height: 24pt;
       font-weight: 400;
       font-size: 14pt;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 12pt;
+      }
     }
   }
 
