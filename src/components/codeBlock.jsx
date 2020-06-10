@@ -31,7 +31,9 @@ const CodeBlock = props => {
                   navigator.clipboard.writeText(CodeToCopy)
                   setButtonCopy("Copied")
                 }}
-                class="copy-to-clipboard"
+                class={cx("copy-to-clipboard", {
+                  copied: ButtonCopy === "Copied",
+                })}
               >
                 {ButtonCopy}
               </button>
