@@ -10,11 +10,12 @@ import heartSVG from "../static/heart-regular.svg"
 import peopleSVG from "../static/users-solid.svg"
 import kitconceptLogo from "../static/kitconcept_logo.png"
 import voltoLogo from "../static/volto_logo.png"
+import Navigation from "../components/Navigation"
 
 const IndexPage = () => (
   <div className="view">
     <div className="landing">
-      <Header />
+      <Navigation />
       <div className="introduction">
         <div className="wrapper">
           <h1>
