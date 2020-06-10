@@ -30,7 +30,7 @@ const Navigation = () => {
             <AnchorLink
               href="#get-started"
               onClick={() => {
-                setMobileMenuOpen(!MobileMenuOpen)
+                setMobileMenuOpen(false)
               }}
             >
               Get Started
@@ -40,7 +40,7 @@ const Navigation = () => {
             <AnchorLink
               href="#demo"
               onClick={() => {
-                setMobileMenuOpen(!MobileMenuOpen)
+                setMobileMenuOpen(false)
               }}
             >
               Demo
@@ -50,7 +50,7 @@ const Navigation = () => {
             <AnchorLink
               href="#open-source"
               onClick={() => {
-                setMobileMenuOpen(!MobileMenuOpen)
+                setMobileMenuOpen(false)
               }}
             >
               Open Source
@@ -60,7 +60,7 @@ const Navigation = () => {
             <AnchorLink
               href="#roadmap"
               onClick={() => {
-                setMobileMenuOpen(!MobileMenuOpen)
+                setMobileMenuOpen(false)
               }}
             >
               Roadmap
