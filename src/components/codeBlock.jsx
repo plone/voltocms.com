@@ -1,16 +1,43 @@
-import React from "react"
+import React, { useState } from "react"
+import cx from "classnames"
 
 const CodeBlock = props => {
+  const [CodeToCopy, setCodeToCopy] = useState(props.code)
+  const [ButtonCopy, setButtonCopy] = useState("Copy")
+
   return (
     <div className="commands">
       <div className="header-codeblock">
         <h3>{props.title}</h3>
       </div>
       <div className="codeblock">
-        <div className="shell">
-          <span>Shell</span>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <div className="shell">
+              <span>Shell</span>
+            </div>
+            <p id="code">{props.code}</p>
+          </div>
+          <div>
+            {document.queryCommandSupported("copy") && (
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(CodeToCopy)
+                  setButtonCopy("Copied")
+                }}
+                class="copy-to-clipboard"
+              >
+                {ButtonCopy}
+              </button>
+            )}
+          </div>
         </div>
-        <p>{props.code}</p>
       </div>
       <div className="description">
         <p>{props.description}</p>

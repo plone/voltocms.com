@@ -462,6 +462,24 @@ h2 {
       margin-top: 10pt;
       margin-bottom: 10pt;
     }
+
+    button {
+      font-size: 18pt;
+      background-color: inherit;
+      padding: 5pt;
+      margin-right: 5pt;
+      margin-top: 3pt;
+      border-radius: 5pt;
+      border: none;
+
+      &:hover {
+        background-color: rgb(250, 221, 221);
+      }
+
+      &:focus {
+        border: none;
+      }
+    }
   }
 
   .description {
