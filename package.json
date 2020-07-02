@@ -1,52 +1,51 @@
 {
   "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.119",
-    "gatsby-link": "^1.6.28",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.14"
+    "classnames": "^2.2.6",
+    "gatsby": "^2.20.25",
+    "gatsby-image": "^2.3.4",
+    "gatsby-plugin-manifest": "^2.3.5",
+    "gatsby-plugin-offline": "^3.1.4",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-plugin-typography": "^2.4.3",
+    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-transformer-sharp": "^2.4.6",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19"
+  },
+  "devDependencies": {
+    "prettier": "2.0.4"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "clean": "rm -rf public",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint --ext .js,.jsx --ignore-pattern public,static .",
-    "psi": "psi pastanaga.io --threshold 99; true",
-    "webpagetest": "webpagetest test https://pastanaga.io -k $WEBPAGETEST_TOKEN --poll --specs testspecs.json --reporter spec; true",
-    "webpagetest:ci": "webpagetest test https://pastanaga.io -k $WEBPAGETEST_TOKEN --poll --specs testspecs.json --reporter xunit > performance.xml || true",
-    "lighthouse": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://pastanaga.io --view",
-    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://pastanaga.io"
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "devDependencies": {
-    "eslint": "^4.12.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1",
-    "gatsby-plugin-typography": "^1.7.10",
-    "lighthouse": "2.7.0",
-    "prettier": "^1.10.2",
-    "psi": "3.0.0",
-    "stylelint": "^8.3.1",
-    "stylelint-config-standard": "^18.0.0",
-    "webpagetest": "0.3.8"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": true
-  },
-  "stylelint": {
-    "extends": "stylelint-config-standard"
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

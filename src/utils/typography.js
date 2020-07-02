@@ -3,12 +3,10 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: '14px',
   baseLineHeight: 1.666,
-  googleFonts: [
-    {
-      name: 'Poppins',
-      styles: ['300', '400', '500', '700', '400italic', '700italic'],
-    },
-  ],
+  googleFonts: [{
+    name: 'Poppins',
+    styles: ['300', '400', '500', '700', '400italic', '700italic'],
+  }, ],
   headerFontFamily: [
     'Poppins',
     'Helvetica Neue',
@@ -16,7 +14,7 @@ const typography = new Typography({
     'Arial',
     'sans-serif',
   ],
-  headerWeight: '300',
+  headerWeight: '400',
   bodyFontFamily: [
     'Poppins',
     'Helvetica Neue',
@@ -24,7 +22,10 @@ const typography = new Typography({
     'Arial',
     'sans-serif',
   ],
-  overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+  overrideStyles: ({
+    adjustFontSizeTo,
+    rhythm
+  }, options, styles) => ({
     twitterwidget: {
       margin: '3em auto',
     },
