@@ -1,0 +1,54 @@
+name: Build and deploy voltocms.com
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 10.x
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn install --pure-lockfile
+
+      - name: Lint the code
+        run: yarn lint
+
+      - name: Build
+        run: yarn run build
+        # env:
+        #   GATSBY_ENV: "production"
+        #   GA_TRACKING_ID: "UA-1907133-11"
+
+      # - name: Deploy to server
+      #   id: deploy
+      #   uses: Pendect/action-rsyncer@v1.1.0
+      #   env:
+      #     DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+      #   with:
+      #     flags: '-avzr --delete'
+      #     options: ''
+      #     ssh_options: '-p ${{secrets.DEPLOY_PORT}}'
+      #     src: 'public/'
+      #     dest: '${{secrets.DEPLOY_USER}}@${{secrets.DEPLOY_SERVER}}:/var/www/voltocms.com'
+
+      # - name: Display status from deploy
+      #   run: echo "${{ steps.deploy.outputs.status }}"

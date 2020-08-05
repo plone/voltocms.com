@@ -1,0 +1,39 @@
+name: Test voltocms.com site
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 10.x
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn install --pure-lockfile
+
+      - name: Lint the code
+        run: yarn lint
+
+      - name: Build
+        run: yarn run build
+        # env:
+        #   GATSBY_ENV: "production"
+        #   GA_TRACKING_ID: "UA-1907133-11"
