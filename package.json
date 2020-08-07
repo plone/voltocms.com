@@ -1,13 +1,14 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "voltocms",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Voltocms.com website.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Volto Community <volto@plone.org>",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
+    "gatsby-plugin-google-analytics": "^2.3.13",
     "gatsby-plugin-manifest": "^2.3.5",
     "gatsby-plugin-offline": "^3.1.4",
     "gatsby-plugin-react-helmet": "^3.2.4",
@@ -29,7 +30,9 @@
     "prettier": "2.0.4"
   },
   "keywords": [
-    "gatsby"
+    "voltocms",
+    "gatsby",
+    "plone"
   ],
   "license": "MIT",
   "scripts": {
@@ -43,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/plone/voltocms"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/plone/voltocms/issues"
   }
 }

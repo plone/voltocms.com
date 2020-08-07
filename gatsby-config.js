@@ -1,8 +1,8 @@
-module.exports = {
+const cfg = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Volto`,
+    description: `Volto, a new experience for editing the web.`,
+    author: `@plone`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -25,13 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Volto CMS`,
+        short_name: `voltocms`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/volto_logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -39,3 +39,18 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+if (process.env.GATSBY_ENV === "production") {
+  const googleAnalyticsCfg = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GA_TRACKING_ID || "UA-1907133-11",
+      head: false,
+      anonymize: true,
+      respectDNT: true,
+    },
+  }
+  cfg.plugins.push(googleAnalyticsCfg)
+}
+
+module.exports = cfg
