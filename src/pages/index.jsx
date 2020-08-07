@@ -101,14 +101,14 @@ const IndexPage = () => (
         <h1>Roadmap</h1>
         <h2>Timeline...</h2>
         <TimeLine
-          date1="Right now"
-          event1="Volto Remote Sprint"
-          date2="April 2020"
-          event2="Volto 5.0 released"
-          date3="February 2020"
-          event3="Volto is now the standard frontend for Plone!"
-          date4="January 2020"
-          event4="Happy New Year Volto!"
+          date1="July 2020"
+          event1="Volto 7.0 released"
+          date2="May 2020"
+          event2="Volto 6.0 released"
+          date3="May 2020"
+          event3="Beethoven Sprint"
+          date4="April 2020"
+          event4="Volto 5.0 released"
           date5="End of 2019"
           event5="Volto 4.0 released"
           date6="End of 2019"
