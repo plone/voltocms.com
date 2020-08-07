@@ -43,7 +43,7 @@ const IndexPage = () => (
         <h3>Simplicity with batteries included</h3>
         <p>
           Assemble your content in an intuitive way. The{" "}
-          <a href="https://www.plone.org">Plone</a> backend provides Volto with
+          <a href="https://plone.org">Plone</a> backend provides Volto with
           a full feature set of an Enterprise Content Management System.
         </p>
         <h3>Securely organized content</h3>
@@ -291,7 +291,9 @@ const IndexPage = () => (
           frontend)
         </p>
         <h3>Documentation</h3>
-        <p>doc.voltocms.com</p>
+        <p>
+          <a href="https://docs.voltocms.com" title="Volto Documentation">docs.voltocms.com</a>
+        </p>
         <h1>Get help</h1>
         <p>
           Find the smart Plone people discussing Volto topics on{" "}
