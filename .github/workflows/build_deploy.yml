@@ -35,17 +35,17 @@ jobs:
         #   GATSBY_ENV: "production"
         #   GA_TRACKING_ID: "UA-1907133-11"
 
-      # - name: Deploy to server
-      #   id: deploy
-      #   uses: Pendect/action-rsyncer@v1.1.0
-      #   env:
-      #     DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
-      #   with:
-      #     flags: '-avzr --delete'
-      #     options: ''
-      #     ssh_options: '-p ${{secrets.DEPLOY_PORT}}'
-      #     src: 'public/'
-      #     dest: '${{secrets.DEPLOY_USER}}@${{secrets.DEPLOY_SERVER}}:/var/www/voltocms.com'
+      - name: Deploy to server
+        id: deploy
+        uses: Pendect/action-rsyncer@v1.1.0
+        env:
+          DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+        with:
+          flags: '-avzr --delete'
+          options: ''
+          ssh_options: '-p ${{secrets.DEPLOY_PORT}}'
+          src: 'public/'
+          dest: '${{secrets.DEPLOY_USER}}@${{secrets.DEPLOY_SERVER}}:/var/www/voltocms.com'
 
-      # - name: Display status from deploy
-      #   run: echo "${{ steps.deploy.outputs.status }}"
+      - name: Display status from deploy
+        run: echo "${{ steps.deploy.outputs.status }}"
