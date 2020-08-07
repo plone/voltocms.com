@@ -31,7 +31,7 @@ const cfg = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/volto_logo.png`, // This path is relative to the root of the site.
+        icon: `src/static/volto_logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
