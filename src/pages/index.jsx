@@ -55,7 +55,7 @@ const IndexPage = () => (
     </div>
     <div className="demo" id="demo">
       <div className="wrapper">
-        <h1>Why using Volto</h1>
+        <h1>Why use Volto</h1>
         <p>
           The world is colorful and <b>multilingual</b>. With Volto it’s
           convenient to manage translations.
