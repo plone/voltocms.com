@@ -31,9 +31,9 @@ jobs:
 
       - name: Build
         run: yarn run build
-        # env:
-        #   GATSBY_ENV: "production"
-        #   GA_TRACKING_ID: "UA-1907133-11"
+        env:
+          GATSBY_ENV: "production"
+          GA_TRACKING_ID: "UA-1907133-11"
 
       - name: Deploy to server
         id: deploy
