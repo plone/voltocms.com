@@ -25,7 +25,7 @@ const CodeBlock = props => {
             <p id="code">{props.code}</p>
           </div>
           <div>
-            {document.queryCommandSupported("copy") && (
+            {process.browser && document.queryCommandSupported("copy") && (
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(CodeToCopy)
