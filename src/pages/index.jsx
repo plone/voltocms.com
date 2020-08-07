@@ -52,25 +52,6 @@ const IndexPage = () => (
           access to your content.
         </p>
       </div>
-      {/* <h1>Get Started</h1>
-      <h2>Getting started with Volto</h2>
-      <CodeBlock
-        title="Clone the   'create-volto-app'   GitHub repository"
-        code="git clone git@github.com:plone/create-volto-app.git"
-      />
-      <CodeBlock
-        title="cd into the create-volto-app folder"
-        code="cd create-volto-app"
-      />
-      <CodeBlock
-        title="Get the boilerplate"
-        code="create-volto-app <app-name>"
-      />
-      <CodeBlock
-        title="Run the project in development mode."
-        code="yarn start"
-        description=" You can view your application at http://localhost:3000. The page supports hot reload."
-      /> */}
     </div>
     <div className="demo" id="demo">
       <div className="wrapper">
@@ -89,31 +70,6 @@ const IndexPage = () => (
           refining Plone and Volto.
         </p>
       </div>
-      {/* <h1>Volto Demo</h1>
-      <h2>
-        Jump into Volto and try out our Demo!<br></br>Try it{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://volto.kitconcept.com"
-        >
-          here
-        </a>
-      </h2>
-      <div
-        className="image-wrapper"
-        style={{
-          width: "900pt",
-          margin: "30pt auto 0 auto",
-        }}
-      >
-        <img
-          className="volto-demo-image"
-          src={voltoDemoImg}
-          alt="Image showing the Volto Demo"
-          style={{ borderRadius: "20pt" }}
-        />
-      </div> */}
     </div>
     <div className="open-source" id="open-source">
       <div className="wrapper">
@@ -139,19 +95,6 @@ const IndexPage = () => (
         <h1>Volto in action</h1>
         <h1>TBD...</h1>
       </div>
-      {/* <h1>Open Source</h1>
-      <div className="image-wrapper">
-        <img
-          src={peopleSVG}
-          alt="people icon"
-          className="people-icon"
-          height="105pt"
-        ></img>
-      </div>
-      <p>
-        Volto is an Open Source project, everybody can participate and use it.
-        There are no fees or anything!
-      </p> */}
     </div>
     <div className="roadmap" id="roadmap">
       <div className="wrapper">
@@ -172,40 +115,6 @@ const IndexPage = () => (
           event6="Introducing the Listing-Block!"
         />
       </div>
-      {/* <h1>Roadmap</h1>
-      <h2>Timeline...</h2>
-      <TimeLine
-        date1="Right now"
-        event1="Volto Remote Sprint"
-        date2="April 2020"
-        event2="Volto 5.0 released"
-        date3="February 2020"
-        event3="Volto is now the standard frontend for Plone!"
-        date4="January 2020"
-        event4="Happy New Year Volto!"
-        date5="End of 2019"
-        event5="Volto 4.0 released"
-        date6="End of 2019"
-        event6="Welcome to the Volto family, Listing-Block!"
-      />
-    </div>
-    <div className="get-involved" id="get-involved">
-      <h1>Get Involved</h1>
-      <h2>Join our Community and become a part of Volto!</h2>
-      <div className="image-wrapper">
-        <img
-          src={heartSVG}
-          alt="heart-svg"
-          className="heart-icon"
-          height="106pt"
-          width="120pt"
-        />
-      </div>
-      <p>React, Python & Plone Developers: Help us to further develop Volto</p>
-      <p>
-        Visit us on <a href="https://github.com/plone/volto">github</a> or join
-        our <a href="">Slack Channel</a>
-      </p> */}
     </div>
     <div className="starting">
       <div className="wrapper">
@@ -324,8 +233,7 @@ const IndexPage = () => (
           React, Python & Plone Developers: Help us to further develop Volto
         </p>
         <p>
-          Visit us on <a href="https://github.com/plone/volto">github</a> or
-          join our <a href="">Slack Channel</a>
+          Visit us on <a href="https://github.com/plone/volto">github</a>
         </p>
       </div>
     </div>
